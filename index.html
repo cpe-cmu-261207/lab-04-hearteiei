@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,13 +8,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-</head>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+
+
+</head>
+<style>
+	.font {
+		font-size: 30px;
+	}
+	.donebutton {
+		font-size: small;
+		background-color: green;
+		object-position: right;
+		font-size: 30px;
+	}
+	.delbutton {
+		font-size: small;
+		background-color: red;
+		object-position: right;
+		font-size: 30px;
+	}
+	.doned {
+     background: #888;
+     color: #fff;
+    text-decoration: line-through;
+    }
+	
+</style>
+<body class="bg-yellow-100 py-30 justify-center max-w-sm mx-auto ">
+	<div>
+		<div>
+			<h1>My Todo List</h1>
+		</div>
+		<br>
+
+		<div class="inputBox">
+			<input type="text" id="input">
+			<button onclick="addlist()">ADD!!!</button>
+              
+		</div>
+		<br>
+	</div>
+
+
+
 </body>
 
 </html>
