@@ -30,23 +30,36 @@
 		font-size: 30px;
 	}
 	.doned {
-     background: #888;
      color: #fff;
     text-decoration: line-through;
-    }
+	}
+	.box{
+		margin: 50px auto;
+    max-width: 600px;
+    width: 100%;
+    background-color: #DDA0DD;
+    border-radius: 25px;
+    padding: 15px;
+	}
+	.task{
+		margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    background-color: #DDA0DD;
+    padding: 4px;
+	}
 	
 </style>
-<body class="bg-yellow-100 py-30 justify-center max-w-sm mx-auto ">
-	<div>
-		<div>
+<body class="bg-purple-300 py-10 justify-center max-w-sm mx-auto ">
+	<div class="box">
+		<div class="flex justify-center">
 			<h1>My Todo List</h1>
 		</div>
 		<br>
 
-		<div class="inputBox">
+		<div class="flex justify-center">
 			<input type="text" id="input">
 			<button onclick="addlist()">ADD!!!</button>
-              
 		</div>
 		<br>
 	</div>
